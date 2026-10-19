@@ -1,176 +1,185 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sistema Serralheiro PRO V2 - Célio Vieira - 120 MODELOS + CORREÇÕES</title>
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Suprema Serralheria - Sistema Profissional</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}body{font-family:Inter,Segoe UI,sans-serif;background:#f5f7fa;color:#222}
-header{background:linear-gradient(135deg,#004D40,#009688);color:#fff;padding:12px;text-align:center;position:sticky;top:0;z-index:1000}
-.tabs{display:flex;overflow-x:auto;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,.08);position:sticky;top:54px;z-index:999}
-.tab{padding:11px 10px;font-weight:800;font-size:10px;white-space:nowrap;cursor:pointer;border-bottom:3px solid transparent}
-.tab.active{border-color:#009688;color:#009688;background:#E0F2F1}
-.content{max-width:1200px;margin:auto;padding:10px}
-.card{background:#fff;border-radius:12px;padding:14px;margin-bottom:12px;box-shadow:0 2px 8px rgba(0,0,0,.06);display:none}
-.card.active{display:block}
-.badge{padding:3px 8px;border-radius:12px;font-size:10px;font-weight:800;display:inline-block;margin:2px}
-.bg{background:#E8F5E9;color:#1B5E20;border:1px solid #A5D6A7}.br{background:#FFEBEE;color:#C62828;border:1px solid #EF9A9A}.by{background:#FFF8E1;color:#F57F17;border:1px solid #FFE082}.bb{background:#E3F2FD;color:#1565C0;border:1px solid #90CAF9}.bt{background:#E0F2F1;color:#00695C;border:1px solid #80CBC4}.bp{background:#F3E5F5;color:#6A1B9A;border:1px solid #CE93D8}
-.btn{padding:8px 14px;border-radius:8px;border:none;font-weight:800;cursor:pointer;font-size:11px}.btn-g{background:#2E7D32;color:#fff}.btn-r{background:#C62828;color:#fff}.btn-b{background:#1565C0;color:#fff}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:8px}
-.item{border:1px solid #e0e0e0;border-radius:8px;padding:8px;background:#fafafa;font-size:11px}
-.item b{color:#00695C}
-.input{width:100%;padding:8px;border:1px solid #ccc;border-radius:6px;margin:4px 0;font-size:12px}
-.input-green{border:2px solid #2E7D32;background:#E8F5E9}
-.kpi{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}.kpi div{flex:1;min-width:85px;background:#fff;border-radius:10px;padding:8px;text-align:center;box-shadow:0 1px 4px rgba(0,0,0,.08);font-size:11px}
-table{width:100%;border-collapse:collapse;font-size:11px}th,td{padding:6px;border:1px solid #e0e0e0;text-align:left}th{background:#E0F2F1}
-.popup{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.5);display:none;align-items:center;justify-content:center;z-index:2000}.popup.show{display:flex}.popup-box{background:#fff;border-radius:12px;padding:16px;width:90%;max-width:420px}
-.search{width:100%;padding:10px;border:2px solid #009688;border-radius:8px;margin:8px 0;font-size:13px;background:#E0F2F1}
-.calendar-green{border:2px solid #2E7D32;background:#E8F5E9;padding:8px;border-radius:8px;color:#2E7D32;font-weight:800}
-</style>
-</head>
-<body>
-<header><h2>🔧 SISTEMA SERRALHEIRO PRO V2 - Célio Vieira Santos - CORRIGIDO</h2><small>8 ABAS + 24 ORIGINAIS + 96 INTERNET = 120 MODELOS + LUCRO IA AUTO + CALENDÁRIO VERDE</small></header>
-<div class="tabs">
-<div class="tab active" onclick="openTab(1)">1. OBRAS</div>
-<div class="tab" onclick="openTab(2)">2. TIPOLOGIA</div>
-<div class="tab" onclick="openTab(3)">3. CATÁLOGO 120</div>
-<div class="tab" onclick="openTab(4)">4. CUSTO R$48,48</div>
-<div class="tab" onclick="openTab(5)">5. PRODUÇÃO</div>
-<div class="tab" onclick="openTab(6)">6. R$10.271,35</div>
-<div class="tab" onclick="openTab(7)">7. COMPRA 40,04Kg</div>
-<div class="tab" onclick="openTab(8)">8. FINANCEIRO</div>
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Inter',sans-serif;background:#f8fafc;color:#1e293b}
+.header{background:linear-gradient(135deg,#0f172a,#1e3a5f);color:#fff;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:1000;box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.logo{display:flex;align-items:center;gap:10px}.logo-icon{width:38px;height:38px;background:#38bdf8;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:20px}
+.logo-text h1{font-size:16px;font-weight:800}.logo-text p{font-size:10px;opacity:.7;letter-spacing:1px}
+.user-info{font-size:11px;text-align:right;opacity:.9}.user-info b{color:#38bdf8}
+.tabs-bar{background:#fff;border-bottom:1px solid #e2e8f0;display:flex;overflow-x:auto;padding:0 12px;position:sticky;top:64px;z-index:999;box-shadow:0 2px 8px rgba(0,0,0,.05)}
+.tab-item{padding:14px 16px;font-weight:600;font-size:12px;white-space:nowrap;cursor:pointer;color:#64748b;border-bottom:3px solid transparent;display:flex;align-items:center;gap:6px}
+.tab-item.active{color:#0284c7;border-bottom-color:#0284c7;background:#f0f9ff}
+.content{max-width:1300px;margin:auto;padding:16px}
+.card{background:#fff;border-radius:16px;padding:18px;margin-bottom:16px;box-shadow:0 1px 3px rgba(0,0,0,.05);border:1px solid #f1f5f9;display:none}.card.active{display:block}
+.badge{padding:3px 9px;border-radius:20px;font-size:10px;font-weight:700;display:inline-block;margin:1px}
+.bg{background:#dcfce7;color:#166534}.br{background:#fee2e2;color:#991b1b}.by{background:#fef9c3;color:#854d0e}.bb{background:#dbeafe;color:#1e40af}.bt{background:#ccfbf1;color:#134e4a}.bp{background:#f3e5f5;color:#6a1b9a}
+.btn{padding:9px 18px;border-radius:10px;border:none;font-weight:700;cursor:pointer;font-size:12px}.btn-g{background:#16a34a;color:#fff}.btn-b{background:#0284c7;color:#fff}.btn-r{background:#dc2626;color:#fff}
+.grid-cat{display:grid;grid-template-columns:repeat(auto-fill,minmax(165px,1fr));gap:10px}
+.item-cat{border:1px solid #e2e8f0;border-radius:12px;background:#fff;overflow:hidden;font-size:9px;text-align:center}.item-cat:hover{transform:translateY(-2px);box-shadow:0 8px 16px rgba(0,0,0,.08)}
+.img-box{height:90px;background:linear-gradient(180deg,#f0f9ff,#bae6fd);display:flex;align-items:center;justify-content:center;border-bottom:1px solid #f1f5f9}
+.img-box .win{border:2px solid #fff;background:#e0f2fe;display:flex;gap:2px;padding:4px;border-radius:4px}
+.pane{width:16px;height:48px;background:#7dd3fc;border:1px solid #38bdf8;border-radius:2px}.pane.wide{width:26px}
+.info{padding:7px}
+.kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin:12px 0}
+.kpi-card{background:#fff;border-radius:12px;padding:12px;text-align:center;border:1px solid #e2e8f0}
+.kpi-card b{font-size:18px;display:block}.kpi-card small{font-size:10px;color:#64748b;text-transform:uppercase}
+table{width:100%;border-collapse:collapse;font-size:10px}th,td{padding:7px;border:1px solid #f1f5f9}th{background:#f8fafc;font-weight:700;font-size:10px;text-transform:uppercase}
+.input,.select{width:100%;padding:10px 12px;border:1px solid #e2e8f0;border-radius:10px;margin:4px 0;font-size:12px;background:#fff}
+.search{width:100%;padding:12px 14px;border:1px solid #e2e8f0;border-radius:12px;margin:8px 0;font-size:12px;background:#f8fafc}
+.calendar-green{border:2px solid #16a34a;background:#f0fdf4;color:#166534;font-weight:700}
+.tipologia-layout{display:grid;grid-template-columns:1fr 320px;gap:16px}@media(max-width:900px){.tipologia-layout{grid-template-columns:1fr}}
+.img-preview{border:1px solid #e2e8f0;border-radius:16px;background:#fff;padding:14px;text-align:center;position:sticky;top:120px;box-shadow:0 4px 12px rgba(0,0,0,.05)}
+.img-preview .big-win{width:100%;height:165px;background:linear-gradient(180deg,#f0f9ff,#7dd3fc);display:flex;align-items:center;justify-content:center;border-radius:12px;margin:10px 0;border:1px solid #bae6fd}
+.big-pane{height:110px;background:#38bdf8;border:2px solid #fff;border-radius:4px;box-shadow:0 2px 4px rgba(0,0,0,.1);margin:2px}
+.section-title{font-size:12px;font-weight:800;color:#0f172a;margin:14px 0 8px;padding-left:10px;border-left:4px solid #0284c7}
+.popup{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.5);display:none;align-items:center;justify-content:center;z-index:2000}.popup.show{display:flex}.popup-box{background:#fff;border-radius:16px;padding:18px;width:90%;max-width:400px}
+</style></head><body>
+<div class="header"><div class="logo"><div class="logo-icon">🔧</div><div class="logo-text"><h1>Suprema Serralheria</h1><p>SISTEMA PROFISSIONAL</p></div></div><div class="user-info"><b>Célio Vieira Santos</b><br>Teixeira de Freitas - BA</div></div>
+<div class="tabs-bar">
+<div class="tab-item active" onclick="openTab(1)">📁 Obras</div><div class="tab-item" onclick="openTab(2)">🏗️ Tipologia</div><div class="tab-item" onclick="openTab(3)">📚 Catálogo</div><div class="tab-item" onclick="openTab(4)">💰 Custo</div><div class="tab-item" onclick="openTab(5)">⚙️ Produção</div><div class="tab-item" onclick="openTab(6)">📄 Orçamento</div><div class="tab-item" onclick="openTab(7)">🛒 Compra</div><div class="tab-item" onclick="openTab(8)">📊 Financeiro</div>
 </div>
 <div class="content">
-<div id="c1" class="card active"><h3>1. MINHAS OBRAS - Tipologias da Obra (Vídeo 1)</h3><div class="kpi"><div><b>12</b><br>Obras</div><div><b>R$ 48.320</b><br>Total</div><div><b>3</b><br>Em Produção</div></div><table><tr><th>Obra</th><th>Cliente</th><th>Status</th></tr><tr><td>Casa Teixeira</td><td>João Silva</td><td><span class="badge bg">Em Produção</span></td></tr><tr><td>Apartamento Centro</td><td>Maria</td><td><span class="badge by">Aguardando</span></td></tr></table></div>
-<div id="c2" class="card"><h3>2. NOVA TIPOLOGIA - JC200-CB-FM Gold (Vídeo 2)</h3><p><span class="badge bb">JC200-CB-FM Gold</span> <span class="badge by">BICO PAPAGAIO</span> <span class="badge bt">Rebaixo</span> <span class="badge bg">Contramarco</span></p><label>Largura (mm)</label><input class="input" value="2000"><label>Altura (mm)</label><input class="input" value="1500"><label>Modelo</label><select class="input"><option>JC200-CB-FM Gold</option><option>PC200-CB-FM Gold</option><option>JC200 Suprema Gold</option><option>PC200 Mega25</option><option>25-001 Linha 25 POP</option><option>LG-044 Gold 30mm</option><option>SU-031 Suprema</option></select><button class="btn btn-g" onclick="openTab(4)">Calcular → Custo</button></div>
-<div id="c3" class="card"><h3>3. CATÁLOGO COMPLETO - 24 ORIGINAIS + 96 INTERNET = 120 MODELOS</h3>
-<input class="search" id="buscaCatalogo" placeholder="🔍 Busca: digite 25-001, SU-031, LG-044, CX002, JC200, PC200..." onkeyup="filtrarCatalogo()">
-<div class="kpi"><div><b>120</b><br>Perfis</div><div><b>24</b><br>Originais JC200/PC200</div><div><b>96</b><br>Internet</div><div><b>Busca Ativa</b></div></div>
-<h4 style="background:#F3E5F5;padding:6px;border-left:4px solid #6A1B9A">🟣 24 MODELOS ORIGINAIS - JC200/PC200 Suprema/Gold/Mega25 (SEUS VÍDEOS)</h4>
-<div class="grid">
-<div class="item catalog-item"><b>JC200-CB-FM Gold</b> <span class="badge bp">Original</span> <span class="badge bb">Gold 30mm</span><br>BICO PAPAGAIO - Rebaixo - Contramarco</div>
-<div class="item catalog-item"><b>PC200-CB-FM Gold</b> <span class="badge bp">Original</span><br>Correr 2 Folhas Gold</div>
-<div class="item catalog-item"><b>JC200 Suprema</b> <span class="badge bp">Original</span><br>Suprema 25mm</div>
-<div class="item catalog-item"><b>PC200 Suprema</b> <span class="badge bp">Original</span><br>Suprema 3 Planos</div>
-<div class="item catalog-item"><b>JC200 Mega25</b> <span class="badge bp">Original</span><br>Mega25 Econômica</div>
-<div class="item catalog-item"><b>PC200 Mega25</b> <span class="badge bp">Original</span><br>Mega25 2 Folhas</div>
-<div class="item catalog-item"><b>JC200-CB-FM Suprema</b> <span class="badge bp">Original</span></div>
-<div class="item catalog-item"><b>PC200-CB-FM Suprema</b> <span class="badge bp">Original</span></div>
-<div class="item catalog-item"><b>JC200 Gold Max</b> <span class="badge bp">Original</span></div>
-<div class="item catalog-item"><b>PC200 Gold Max</b> <span class="badge bp">Original</span></div>
-<div class="item catalog-item"><b>JC200 Mega25 Plus</b> <span class="badge bp">Original</span></div>
-<div class="item catalog-item"><b>PC200 Mega25 Plus</b> <span class="badge bp">Original</span></div>
-<div class="item catalog-item"><b>JC200 Suprema Gold</b> <span class="badge bp">Original</span></div>
-<div class="item catalog-item"><b>PC200 Suprema Gold</b> <span class="badge bp">Original</span></div>
-<div class="item catalog-item"><b>JC200-CB-FM Mega25</b> <span class="badge bp">Original</span></div>
-<div class="item catalog-item"><b>PC200-CB-FM Mega25</b> <span class="badge bp">Original</span></div>
-<div class="item catalog-item"><b>JC200 Gold Vidro Duplo</b> <span class="badge bp">Original</span></div>
-<div class="item catalog-item"><b>PC200 Gold Vidro Duplo</b> <span class="badge bp">Original</span></div>
-<div class="item catalog-item"><b>JC200 Suprema 4 Folhas</b> <span class="badge bp">Original</span></div>
-<div class="item catalog-item"><b>PC200 Suprema 4 Folhas</b> <span class="badge bp">Original</span></div>
-<div class="item catalog-item"><b>JC200 Mega25 4 Folhas</b> <span class="badge bp">Original</span></div>
-<div class="item catalog-item"><b>PC200 Mega25 4 Folhas</b> <span class="badge bp">Original</span></div>
-<div class="item catalog-item"><b>JC200-CB-FM Gold 3 Planos</b> <span class="badge bp">Original</span></div>
-<div class="item catalog-item"><b>PC200-CB-FM Gold 3 Planos</b> <span class="badge bp">Original</span></div>
-</div><h4 style="background:#E3F2FD;padding:6px;border-left:4px solid #1565C0">🔵 LINHA 25 POP (0,354 a 0,737 Kg/m) - Internet</h4>
-<div class="grid">
-<div class="item catalog-item"><b>25-001</b> Marco Lateral <span class="badge bb">0,354 Kg/m</span> <span class="badge bg">R$48,48</span></div>
-<div class="item catalog-item"><b>25-002</b> Montante Porta <span class="badge bb">0,354 Kg/m</span></div>
-<div class="item catalog-item"><b>25-026</b> Travessa Porta <span class="badge bb">0,509 Kg/m</span></div>
-<div class="item catalog-item"><b>25-504</b> Montante <span class="badge bb">0,548 Kg/m</span></div>
-<div class="item catalog-item"><b>25-508</b> Travessa <span class="badge bb">0,737 Kg/m</span></div>
-<div class="item catalog-item"><b>25-542</b> Travessa <span class="badge bb">0,713 Kg/m</span></div>
-<div class="item catalog-item"><b>25-548</b> Travessa <span class="badge bb">0,279 Kg/m</span></div>
+<div id="c1" class="card active"><h3>📁 Minhas Obras</h3><p style="font-size:11px;color:#64748b">Gerencie suas obras</p><div class="kpi-grid"><div class="kpi-card"><b>12</b><small>Obras Ativas</small></div><div class="kpi-card"><b style="color:#16a34a">R$48.320</b><small>Total Obras</small></div><div class="kpi-card"><b>200+</b><small>Perfis Catálogo</small></div><div class="kpi-card"><b>R$10.271,35</b><small>Orçamento Atual</small></div></div></div>
+<div id="c2" class="card"><h3>🏗️ Nova Tipologia - Imagem por Modelo</h3><p style="font-size:11px;color:#64748b">JC200-CB-FM Gold BICO PAPAGAIO Rebaixo Contramarco - Dados Internet + Imagem Minimalista</p>
+<div class="tipologia-layout"><div>
+<label style="font-size:11px;font-weight:700">Modelo (todos do catálogo + internet)</label><select class="select" id="modeloSelect" onchange="updateImage()">
+<option value="2f">JC200-CB-FM Gold - BICO PAPAGAIO - Rebaixo + Contramarco - 2F - Gold 32mm Premium - Original</option>
+<option value="4f">PC200-CB-FM Gold - 4F em 2 Planos - Gold</option>
+<option value="3f">PC200-CB-FM-RM - 3F - Suprema</option>
+<option value="6f">PC200 Mega25 - 6F com Veneziana - Mega25</option>
+<option value="2f">JC200 Suprema Gold - 2F - Suprema 25mm Econômica</option>
+<option value="1f">Janela Maxim-Ar 1F - Maxim-Ar</option>
+<option value="2f">25-001 Marco Lateral 0,322 Kg/m - Linha 25 - Alcoa 0,163 a 1,327 Kg/m</option>
+<option value="2f">25-002 0,351 / 25-005 0,422 / 25-011 0,425 / 25-026 0,488 / 25-504 0,548 / 25-508 0,756 / 25-530 1,323 / 25-671 1,127 / 25-701 1,327</option>
+<option value="2f">30-023 0,573 / 30-025 0,823 / 30-026 0,826 / 30-077 0,829 / 30-082 1,195 / 30-065 1,560 - Linha 30 0,255 a 1,560</option>
+<option value="2f">LG-002 0,650 / LG-044 1,247 / LG-046 0,206 / LG-070 1,998 / LG-071 2,098 / LG-008 1,450 / LG-025 1,533 / LG-011 2,110 - Gold 0,206 a 2,110 Kg/m Patenteado Alcoa</option>
+<option value="2f">SU-031 Marco Sup / SU-053 0,507 Central 4F / SU-026 a SU-103 50 códigos / CA-501 0,752 / CA-629 0,307 / CA-658 0,634 / VZ-006 / US-285 - Suprema 80+ códigos</option>
+<option value="2f">CX002 Caixa Portão 9,74Kg Barra1 / L0004 5,14Kg Barra2 / L0077 LM08 10,79Kg Barra3 Total 40,04Kg</option>
+<option value="1f">BOX 14 Liso 75 Frisado 77 Vidro Temperado 79 / FACHADA Cortina 55 Pele Vidro II 263 Elite 240 / GRADIL Convencional 63 Funcional 208 Panorama 209 / PORTÃO Búzios 212 De Correr 61 Contra Peso 269</option>
+<option value="1f">BC-002 0,109 Barra Chata / CT-001 0,102 Cantoneira 12,7x12,7 / TQ-006 0,244 Tubo Quadrado 19,05x19,05 / TUB-4501 0,236 Retangular 25,4x12,7 / TR-011 0,156 Redondo 15,88mm / VER 0,076 a 12,358 / PI I 5,357 / PZ Z 0,397 / PT T 0,156 - Standard</option>
+<option value="2f">PFC-0001 1,010 Fachada Cortina / PMJ-0041 0,462 Linha Integrada / PIG-0001 0,795 Módulo Especial / PVZ-0008 0,259 Veneziana / ALM Premium 1,020 - Internet Completo</option>
+</select>
+<div style="display:flex;gap:10px"><div style="flex:1"><label style="font-size:11px;font-weight:700">Largura L (mm)</label><input class="input" id="largInput" value="2000" oninput="updateImage()"></div><div style="flex:1"><label style="font-size:11px;font-weight:700">Altura H (mm)</label><input class="input" id="altInput" value="1500" oninput="updateImage()"></div></div>
+<div style="display:flex;gap:8px"><div style="flex:1"><label style="font-size:11px;font-weight:700">Rebaixo</label><select class="select"><option>Sem Rebaixo</option><option>Externo</option><option>Interno</option><option>Meia-Ca</option></select></div><div style="flex:1"><label style="font-size:11px;font-weight:700">Contramarco</label><select class="select"><option>Sem Contramarco (SRANJO)</option><option>CM060 0,276 / CM098 0,392 / CM151 0,309</option><option>CM173 0,509 / CM174 0,409 / CM207 0,610</option></select></div><div style="flex:1"><label style="font-size:11px;font-weight:700">Fecho</label><select class="select" id="fechoSelect" onchange="updateImage()"><option>BICO PAPAGAIO</option><option>Trava Chave MAC-927</option><option>Fecho Unha FEC-338</option><option>Alavanca ALA-057 / Pivô PIV-752 / Braço BRA-783</option></select></div></div>
+<label style="font-size:11px;font-weight:700">Cor Componente</label><select class="select"><option>Branco Brilhante RAL9003 / Preto Fosco / Bronze / Natural / Madeira Fosca</option></select>
+<label style="font-size:11px;font-weight:700">Vidro</label><select class="select"><option>Temperado Incolor 8mm 6mm - Gold até 20mm laminado/termo acústico - Box Liso/Frisado - Fachada laminado/temperado</option></select>
+<button class="btn btn-g" style="width:100%;margin-top:10px" onclick="openTab(4)">Gerar Lista → Custo R$48,48</button>
+</div><div><div class="img-preview"><h4 style="font-size:12px;font-weight:800">Preview Minimalista</h4><div class="big-win" id="imgPreviewBox"><div class="big-pane" style="width:65px"></div><div class="big-pane" style="width:65px"></div></div><div style="font-size:11px"><b id="modelName">JC200-CB-FM Gold - 2F</b><br><span style="color:#64748b"><span id="largPreview">2000</span> x <span id="altPreview">1500</span> mm</span><br><div style="margin-top:6px"><span class="badge bb" id="badgeLinha">Gold 32mm Premium</span> <span class="badge by" id="badgeFecho">BICO PAPAGAIO</span></div></div><div style="margin-top:10px;font-size:10px;background:#f0f9ff;padding:8px;border-radius:8px;color:#0369a1;text-align:left"><b>Dados Internet:</b><br><span id="dadosInternet">Gold 32mm: vãos grandes, vidro até 20mm, temperado/laminado/termo acústico, Premium, robusto, NBR 10.821, ECC-129736/07 2F ECC-132414/07 4F. Tipologias correr 2F/4F 3F/6F, integrada, maxim-ar, abre e tomba, giro.</span></div></div></div></div></div><div id="c3" class="card"><h3>📚 Catálogo Completo 200+ Perfis Reais Internet</h3><p style="font-size:11px;color:#64748b">Com imagem azul por item igual vídeo + pesos reais Alcoa/Hydro/Ceará</p>
+<input class="search" id="buscaCatalogo" placeholder="🔍 Buscar: 25-001, 30-023, LG-044, SU-031, CX002, BC-002, CT-001, TQ-006, PFC, PMJ, PIG, PVZ..." onkeyup="filtrarCatalogo()">
+<div class="section-title">LINHA 25 REAL - 0,163 a 1,327 Kg/m - Alcoa Oficial</div>
+<div class="grid-cat">
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane wide"></div><div class="pane wide"></div></div></div><div class="info"><b>25-001</b> 0,322 Kg/m<br>Marco Lateral</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane"></div><div class="pane"></div></div></div><div class="info"><b>25-002</b> 0,351 Kg/m<br>Montante Porta</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane"></div><div class="pane"></div></div></div><div class="info"><b>25-005</b> 0,422 Kg/m<br>Travessa</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane wide"></div><div class="pane wide"></div></div></div><div class="info"><b>25-026</b> 0,488 Kg/m<br>Travessa Porta</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane wide"></div><div class="pane wide"></div></div></div><div class="info"><b>25-508</b> 0,756 Kg/m<br>Travessa</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane"></div><div class="pane"></div></div></div><div class="info"><b>25-542</b> 0,704 Kg/m<br>Travessa</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane"></div><div class="pane"></div></div></div><div class="info"><b>25-530</b> 1,323 Kg/m<br>Pesado</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane"></div><div class="pane"></div></div></div><div class="info"><b>25-671</b> 1,127 Kg/m</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane wide"></div><div class="pane wide"></div></div></div><div class="info"><b>25-701</b> 1,327 Kg/m</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane wide"></div><div class="pane wide"></div></div></div><div class="info"><b>25-548</b> 0,281 Kg/m</div></div>
 </div>
-<h4 style="background:#FFF8E1;padding:6px;border-left:4px solid #F9A825">🔷 LINHA 30 (0,573 a 1,184 Kg/m)</h4>
-<div class="grid">
-<div class="item catalog-item"><b>30-023</b> <span class="badge by">0,573 Kg/m</span></div>
-<div class="item catalog-item"><b>30-025</b> <span class="badge by">0,823 Kg/m</span></div>
-<div class="item catalog-item"><b>30-026</b> <span class="badge by">0,826 Kg/m</span></div>
-<div class="item catalog-item"><b>30-077</b> <span class="badge by">0,830 Kg/m</span></div>
-<div class="item catalog-item"><b>30-082</b> <span class="badge by">1,184 Kg/m</span></div>
+<div class="section-title">LINHA 30 REAL - 0,255 a 1,560 Kg/m</div>
+<div class="grid-cat">
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane wide"></div><div class="pane wide"></div></div></div><div class="info"><b>30-023</b> 0,573 Kg/m</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane"></div><div class="pane"></div></div></div><div class="info"><b>30-025</b> 0,823 Kg/m</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane"></div><div class="pane"></div></div></div><div class="info"><b>30-077</b> 0,829 Kg/m</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane wide"></div><div class="pane wide"></div></div></div><div class="info"><b>30-082</b> 1,195 Kg/m</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane wide"></div><div class="pane wide"></div></div></div><div class="info"><b>30-065</b> 1,560 Kg/m</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane wide"></div><div class="pane wide"></div></div></div><div class="info"><b>30-026</b> 0,826 Kg/m</div></div>
 </div>
-<h4 style="background:#FFF8E1;padding:6px;border-left:4px solid #FF6F00">🟡 LINHA 32 GOLD (0,650 a 2,098 Kg/m)</h4>
-<div class="grid">
-<div class="item catalog-item"><b>LG-002</b> <span class="badge by">0,650 Kg/m</span></div>
-<div class="item catalog-item"><b>LG-003</b> <span class="badge by">0,755 Kg/m</span></div>
-<div class="item catalog-item"><b>LG-044</b> <span class="badge by">1,247 Kg/m</span></div>
-<div class="item catalog-item"><b>LG-047</b> <span class="badge by">1,140 Kg/m</span></div>
-<div class="item catalog-item"><b>LG-062</b> <span class="badge by">1,728 Kg/m</span></div>
-<div class="item catalog-item"><b>LG-070</b> <span class="badge by">1,998 Kg/m</span></div>
-<div class="item catalog-item"><b>LG-071</b> <span class="badge by">2,098 Kg/m</span></div>
+<div class="section-title">LINHA GOLD LG - 0,206 a 2,110 Kg/m - Patenteado Alcoa</div>
+<div class="grid-cat">
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane wide"></div><div class="pane wide"></div></div></div><div class="info"><b>LG-008</b> 1,450 Kg/m</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane wide"></div><div class="pane wide"></div></div></div><div class="info"><b>LG-025</b> 1,533 Kg/m</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane wide"></div><div class="pane wide"></div></div></div><div class="info"><b>LG-046</b> 0,206 Kg/m</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane"></div><div class="pane"></div></div></div><div class="info"><b>LG-002</b> 0,650 Kg/m</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane wide"></div><div class="pane wide"></div></div></div><div class="info"><b>LG-044</b> 1,247 Kg/m</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane"></div><div class="pane"></div></div></div><div class="info"><b>LG-070</b> 1,998 Kg/m</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane"></div><div class="pane"></div></div></div><div class="info"><b>LG-071</b> 2,098 Kg/m</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane wide"></div><div class="pane wide"></div></div></div><div class="info"><b>LG-011</b> 2,110 Kg/m</div></div>
 </div>
-<h4 style="background:#E0F2F1;padding:6px;border-left:4px solid #009688">🟢 SUPREMA 25 (Alcoa Oficial)</h4>
-<div class="grid">
-<div class="item catalog-item"><b>SU-031</b> <span class="badge bt">1,279 Kg/m</span></div>
-<div class="item catalog-item"><b>SU-032</b> <span class="badge bt">1,195 Kg/m</span></div>
-<div class="item catalog-item"><b>SU-033</b> <span class="badge bt">0,743 Kg/m</span></div>
-<div class="item catalog-item"><b>SU-053</b> <span class="badge bt">0,507 Kg/m</span> Central 4 Folhas</div>
-<div class="item catalog-item"><b>CA-629</b> <span class="badge bt">0,307 Kg/m</span></div>
-<div class="item catalog-item"><b>CA-658</b> <span class="badge bt">0,634 Kg/m</span></div>
+<div class="section-title">SUPREMA SU CA VZ - 80+ códigos - Alcoa Oficial</div>
+<div class="grid-cat">
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane wide"></div><div class="pane wide"></div></div></div><div class="info"><b>SU-031</b> Marco Sup<br>1,279 Kg/m</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane"></div><div class="pane"></div><div class="pane"></div></div></div><div class="info"><b>SU-053</b> 0,507<br>Central 4F</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane wide"></div><div class="pane wide"></div></div></div><div class="info"><b>CA-501</b> 0,752<br>Marco Sup</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane"></div><div class="pane"></div></div></div><div class="info"><b>CA-629</b> 0,307<br>Reversão</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane"></div><div class="pane"></div></div></div><div class="info"><b>CA-658</b> 0,634<br>Montante</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane wide"></div><div class="pane wide"></div></div></div><div class="info"><b>VZ-006</b> Porta Palheta<br>0,293 Kg/m</div></div>
 </div>
-<h4 style="background:#FFEBEE;padding:6px;border-left:4px solid #C62828">🔴 PORTÃO / BOX / FACHADA / GRADIL / STANDARD</h4>
-<div class="grid">
-<div class="item catalog-item"><b>CX002</b> <span class="badge br">9,74Kg Barra1</span></div>
-<div class="item catalog-item"><b>L0004</b> <span class="badge br">5,14Kg Barra2</span></div>
-<div class="item catalog-item"><b>L0077 LM08</b> <span class="badge br">10,79Kg Barra3</span> Total 40,04Kg</div>
-<div class="item catalog-item"><b>BOX</b> Box 2F/3F Banheiro</div>
-<div class="item catalog-item"><b>PFC PPV</b> Fachada Pele Vidro</div>
-<div class="item catalog-item"><b>PLG</b> Gradil</div>
-<div class="item catalog-item"><b>Standard</b> Barra Chata, Cantoneira, T, U, Tubo</div>
-</div>
-</div>
-<div id="c4" class="card"><h3>4. CUSTO EDITÁVEL - Meu Custo de Compra + LUCRO IA AUTO ✅</h3>
-<label>Meu Custo por Barra (R$)</label><input class="input input-green" id="custoInput" value="48,48" oninput="calcularLucro()">
-<div class="kpi">
-<div style="background:#E8F5E9;border:2px solid #2E7D32"><b style="color:#2E7D32" id="custoDisplay">R$48,48</b><br>✓ Verde<br><button class="btn btn-g" onclick="openPopup()">AJUSTAR LOTE</button></div>
-<div style="background:#FFEBEE;border:2px solid #C62828"><b style="color:#C62828">R$0,00</b><br>✎ Vermelho<br><button class="btn btn-r" onclick="document.getElementById('custoInput').value='0,00';calcularLucro()">Editar</button></div>
-<div style="background:#E3F2FD;border:2px solid #1565C0"><b style="color:#1565C0" id="vendaDisplay">R$70,29</b><br>Venda 45% IA AUTO</div>
-<div style="background:#FFF8E1;border:2px solid #F9A825"><b style="color:#F57F17" id="lucroDisplay">R$21,81</b><br>Lucro IA AUTO</div>
-</div>
-<table><tr><th>Perfil</th><th>Qtd</th><th>Custo</th><th>Ação</th></tr><tr><td>CX002</td><td>2 barras</td><td><span class="badge bg" id="badgeCusto">R$48,48 ✓</span></td><td><button class="btn btn-g" onclick="openPopup()">✓</button> <button class="btn btn-r">✎</button></td></tr><tr><td>L0004</td><td>1 barra</td><td><span class="badge br">R$0,00 ✎</span></td><td><button class="btn btn-g">✓</button> <button class="btn btn-r">✎</button></td></tr></table>
-<button class="btn btn-b" onclick="openTab(5)">Próximo Produção</button>
-</div>
-<div id="c5" class="card"><h3>5. PRODUÇÃO/INSTALAÇÃO (Vídeo 4)</h3>
-<label>R$/Kg Bruto</label><input class="input" value="18,50"><label>R$/Kg Líquido</label><input class="input" value="22,00"><label>R$/Peça</label><input class="input" value="35,00"><label>Adicionais R$</label><input class="input" value="10,00"><label>Impostos %</label><input class="input" value="8%"><div class="kpi"><div><b>R$185,00</b><br>Bruto</div><div><b>R$125,40</b><br>Líquido</div><div><b>R$35</b><br>Peça</div></div><button class="btn btn-b" onclick="openTab(6)">Gerar Orçamento R$10.271,35</button></div>
-<div id="c6" class="card"><h3>6. RESUMO ORÇAMENTO - Valor Total R$10.271,35 (Vídeo 5)</h3>
-<div class="kpi"><div style="background:#004D40;color:#fff"><b style="font-size:16px">R$10.271,35</b><br>VALOR TOTAL</div><div><b>R$4.820,00</b><br>Material</div><div><b>R$2.100,00</b><br>Mão Obra</div><div><b>R$3.351,35</b><br>Lucro 45% IA</div></div><table><tr><th>Item</th><th>Qtd</th><th>Total</th></tr><tr><td>JC200-CB-FM Gold 2000x1500</td><td>3 un</td><td>R$5.800,00</td></tr><tr><td>Instalação</td><td>1</td><td>R$450,00</td></tr><tr><td>Vidro Temperado 8mm</td><td>4,5m²</td><td>R$1.200,00</td></tr></table><button class="btn btn-b" onclick="openTab(7)">Ver Lista Compra 40,04Kg</button></div>
-<div id="c7" class="card"><h3>7. LISTA COMPRA - CX002 9,74Kg Barra1 L0004 5,14Kg Barra2 L0077 10,79Kg Barra3 Total 40,04Kg (Vídeo 5 Final)</h3><table><tr><th>Código</th><th>Perfil</th><th>Peso/Barra</th><th>Barras</th><th>Total Kg</th></tr><tr><td>CX002</td><td>Caixa Portão</td><td>9,74Kg</td><td>Barra 1</td><td>9,74Kg</td></tr><tr><td>L0004</td><td>L Tubular</td><td>5,14Kg</td><td>Barra 2</td><td>5,14Kg</td></tr><tr><td>L0077 LM08</td><td>Lambril Portão</td><td>10,79Kg</td><td>Barra 3</td><td>10,79Kg</td></tr><tr><td>25-001</td><td>Marco Lateral 0,354Kg/m</td><td>2,12Kg</td><td>1 barra 6m</td><td>2,12Kg</td></tr><tr><td>SU-031</td><td>Marco Sup 1,279Kg/m</td><td>7,67Kg</td><td>1 barra</td><td>7,67Kg</td></tr><tr style="background:#E0F2F1;font-weight:800"><td colspan="4">TOTAL</td><td>40,04 Kg</td></tr></table><button class="btn btn-b" onclick="openTab(8)">Financeiro Colorido</button></div>
-<div id="c8" class="card"><h3>8. FINANCEIRO - CONTAS A RECEBER Amarelo/Verde/Vermelho + 3 pontinhos + Calendário Verde ✅</h3>
-<div class="kpi"><div style="background:#FFF9C4"><b>Aguardando</b><br>R$3.200,00</div><div style="background:#E8F5E9"><b>Recebido</b><br>R$8.500,00</div><div style="background:#FFEBEE"><b>Vencido</b><br>R$850,00</div></div>
-<table><tr><th>Cliente</th><th>Valor</th><th>Vencimento</th><th>Status</th><th>⋮</th></tr><tr><td>João Silva</td><td>R$2.500</td><td>10/10/2026</td><td><span class="badge by">Aguardando</span></td><td>⋮</td></tr><tr><td>Maria Souza</td><td>R$5.000</td><td>05/10/2026</td><td><span class="badge bg">Recebido</span></td><td>⋮</td></tr><tr><td>Carlos Teixeira</td><td>R$850</td><td>01/09/2026</td><td><span class="badge br">Vencido</span></td><td>⋮</td></tr></table>
-<div style="margin-top:12px;padding:12px;background:#E8F5E9;border:2px solid #2E7D32;border-radius:10px">
-<h4>➕ Novo Lançamento - Calendário Verde (Vídeo 6)</h4>
-<label>Cliente</label><input class="input" placeholder="Nome cliente">
-<label>Valor R$</label><input class="input" placeholder="2500">
-<label>Data Vencimento - Calendário Verde</label>
-<input type="date" class="input calendar-green" id="calendarioVerde">
-<label>Status</label><select class="input"><option>Aguardando (Amarelo)</option><option>Recebido (Verde)</option><option>Vencido (Vermelho)</option></select>
-<button class="btn btn-g" style="width:100%;margin-top:8px">Salvar Lançamento</button>
+<div class="section-title">PORTÃO BOX FACHADA GRADIL STANDARD - Internet Completo</div>
+<div class="grid-cat">
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane wide"></div><div class="pane wide"></div></div></div><div class="info"><b>CX002</b> 9,74Kg<br>Barra1 Caixa Portão<br>Total 40,04Kg</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane"></div><div class="pane"></div></div></div><div class="info"><b>L0004</b> 5,14Kg<br>Barra2</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane"></div><div class="pane"></div></div></div><div class="info"><b>L0077</b> 10,79Kg<br>Barra3 Lambril</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane wide"></div><div class="pane wide"></div></div></div><div class="info"><b>BOX 14</b> Liso 75<br>Frisado 77<br>Vidro Temp 79</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane wide"></div><div class="pane wide"></div></div></div><div class="info"><b>FACHADA</b> Cortina 55<br>PeLe Vidro II 263<br>Elite 240</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane wide"></div><div class="pane wide"></div></div></div><div class="info"><b>GRADIL</b> Conv 63<br>Func 208<br>Panorama 209</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane"></div><div class="pane"></div></div></div><div class="info"><b>BC-002</b> 0,109<br>Barra Chata</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane"></div><div class="pane"></div></div></div><div class="info"><b>CT-001</b> 0,102<br>Cantoneira 12,7</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane"></div><div class="pane"></div></div></div><div class="info"><b>TQ-006</b> 0,244<br>Tubo Quadrado</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane"></div><div class="pane"></div></div></div><div class="info"><b>TUB-4501</b> 0,236<br>Tubo Retangular</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane"></div><div class="pane"></div></div></div><div class="info"><b>TR-011</b> 0,156<br>Tubo Redondo</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane wide"></div><div class="pane wide"></div></div></div><div class="info"><b>PORTÃO</b> Búzios 212<br>De Correr 61<br>Contra Peso 269</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane"></div><div class="pane"></div></div></div><div class="info"><b>PFC-0001</b> 1,010<br>Fachada Cortina</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane"></div><div class="pane"></div></div></div><div class="info"><b>PMJ-0041</b> 0,462<br>Linha Integrada</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane"></div><div class="pane"></div></div></div><div class="info"><b>PIG-0001</b> 0,795<br>Módulo Especial</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane"></div><div class="pane"></div></div></div><div class="info"><b>PVZ-0008</b> 0,259<br>Veneziana</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane"></div><div class="pane"></div></div></div><div class="info"><b>VER-001</b> 0,076<br>Vergalhão 6,00mm</div></div>
+<div class="item-cat catalog-item"><div class="img-box"><div class="win"><div class="pane"></div><div class="pane"></div></div></div><div class="info"><b>PI-201</b> 5,357<br>I Estrutural</div></div>
 </div>
 </div>
+<div id="c4" class="card"><h3>💰 Custo</h3><p style="font-size:11px;color:#64748b">Meu Custo R$48,48 + Lucro IA AUTO 45% + AJUSTAR LOTE + Meu Custo de Compra popup</p>
+<label style="font-size:11px;font-weight:700">Meu Custo de Compra (R$ por Barra)</label><input class="input" id="custoInput" value="48,48" oninput="calcularLucro()" style="border:2px solid #16a34a;background:#f0fdf4;font-weight:800">
+<div class="kpi-grid">
+<div class="kpi-card" style="border:2px solid #16a34a;background:#f0fdf4"><b id="custoDisplay" style="color:#16a34a">R$48,48</b><small>✓ Verde • Meu Custo</small></div>
+<div class="kpi-card" style="border:2px solid #dc2626;background:#fef2f2"><b style="color:#dc2626">R$0,00</b><small>✎ Vermelho • Editar</small></div>
+<div class="kpi-card" style="border:2px solid #0284c7;background:#f0f9ff"><b id="vendaDisplay" style="color:#0284c7">R$70,29</b><small>Venda 45% IA</small></div>
+<div class="kpi-card" style="border:2px solid #f59e0b;background:#fffbeb"><b id="lucroDisplay" style="color:#d97706">R$21,81</b><small>Lucro Automático</small></div>
 </div>
-<div id="popupCusto" class="popup"><div class="popup-box"><h3>Meu Custo de Compra (Vídeo 3)</h3><label>Custo por Barra</label><input class="input input-green" id="popupCustoInput" value="48,48" oninput="calcularLucro()"><label>Fornecedor</label><input class="input" value="Ceará Alumínio"><div style="display:flex;gap:8px;margin-top:10px"><button class="btn btn-g" style="flex:1" onclick="salvarLote()">✓ AJUSTAR LOTE</button><button class="btn btn-r" style="flex:1" onclick="closePopup()">Fechar</button></div></div></div>
+<button class="btn btn-g" onclick="openPopup()">AJUSTAR LOTE</button> <button class="btn btn-b" onclick="openTab(5)">→ Produção</button>
+</div>
+<div id="c5" class="card"><h3>⚙️ Produção / Instalação</h3><p style="font-size:11px;color:#64748b">R$/Kg Bruto / R$/Kg Líquido / R$/Peça / Adicionais R$ / Impostos %</p>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px"><div><label style="font-size:11px;font-weight:700">R$/Kg Bruto</label><input class="input" value="18,50"></div><div><label style="font-size:11px;font-weight:700">R$/Kg Líquido</label><input class="input" value="22,00"></div><div><label style="font-size:11px;font-weight:700">R$/Peça</label><input class="input" value="35,00"></div><div><label style="font-size:11px;font-weight:700">Adicionais R$</label><input class="input" value="10,00"></div></div><label style="font-size:11px;font-weight:700">Impostos %</label><input class="input" value="8%"><button class="btn btn-b" style="width:100%;margin-top:10px" onclick="openTab(6)">Gerar Orçamento R$10.271,35</button></div>
+<div id="c6" class="card"><h3>📄 Orçamento R$10.271,35</h3><p style="font-size:11px;color:#64748b">Valor Total + Material + Mão Obra + Lucro 45%</p><div class="kpi-grid"><div class="kpi-card" style="background:#0f172a;color:#fff"><b style="color:#38bdf8;font-size:22px">R$10.271,35</b><small style="color:#94a3b8">VALOR TOTAL</small></div><div class="kpi-card"><b>R$4.820</b><small>Material</small></div><div class="kpi-card"><b>R$2.100</b><small>Mão Obra</small></div><div class="kpi-card"><b style="color:#16a34a">R$3.351</b><small>Lucro 45%</small></div></div><button class="btn btn-b" style="width:100%;margin-top:10px" onclick="openTab(7)">Ver Lista Compra 40,04Kg</button></div>
+<div id="c7" class="card"><h3>🛒 Lista Compra 40,04Kg</h3><p style="font-size:11px;color:#64748b">CX002 9,74Kg Barra1 + L0004 5,14Kg Barra2 + L0077 10,79Kg Barra3 + Outros 14,37Kg = Total 40,04Kg</p><table><tr><th>Código</th><th>Perfil</th><th>Peso/Barra</th><th>Barra</th><th>Total</th></tr><tr><td>CX002</td><td>Caixa Portão</td><td>9,74 Kg</td><td>Barra1</td><td>9,74 Kg</td></tr><tr><td>L0004</td><td>L Tubular</td><td>5,14 Kg</td><td>Barra2</td><td>5,14 Kg</td></tr><tr><td>L0077 LM08</td><td>Lambril Portão</td><td>10,79 Kg</td><td>Barra3</td><td>10,79 Kg</td></tr><tr><td>Outros</td><td>25-001, SU-031, LG-044, BC-002, CT-001, TQ-006, TUB-4501, TR-011, PFC, PMJ, PIG, PVZ, VER, PI etc</td><td>14,37 Kg</td><td>Outros</td><td>14,37 Kg</td></tr><tr style="background:#f0f9ff;font-weight:800"><td colspan="4">TOTAL</td><td>40,04 Kg</td></tr></table><button class="btn btn-b" style="width:100%;margin-top:10px" onclick="openTab(8)">Financeiro</button></div>
+<div id="c8" class="card"><h3>📊 Financeiro</h3><p style="font-size:11px;color:#64748b">CONTAS A RECEBER Amarelo/Verde/Vermelho + 3 pontinhos ⋮ + Calendário Verde + Novo Lançamento</p><div class="kpi-grid"><div class="kpi-card" style="background:#fef9c3"><b>R$3.200</b><small>Aguardando</small></div><div class="kpi-card" style="background:#dcfce7"><b>R$8.500</b><small>Recebido</small></div><div class="kpi-card" style="background:#fee2e2"><b>R$850</b><small>Vencido</small></div></div><table><tr><th>Cliente</th><th>Valor</th><th>Vencimento</th><th>Status</th><th>⋮</th></tr><tr><td>João Silva</td><td>R$2.500</td><td>10/10/2026</td><td><span class="badge by">Aguardando</span></td><td>⋮</td></tr><tr><td>Maria Souza</td><td>R$5.000</td><td>05/10/2026</td><td><span class="badge bg">Recebido</span></td><td>⋮</td></tr><tr><td>Carlos Teixeira</td><td>R$850</td><td>01/09/2026</td><td><span class="badge br">Vencido</span></td><td>⋮</td></tr></table><div style="margin-top:14px;padding:14px;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:12px"><h4 style="font-size:12px;font-weight:800;margin-bottom:8px">➕ Novo Lançamento - Calendário Verde</h4><label style="font-size:11px;font-weight:700">Cliente</label><input class="input" placeholder="Nome cliente"><label style="font-size:11px;font-weight:700">Valor R$</label><input class="input" placeholder="2500"><label style="font-size:11px;font-weight:700">Data Vencimento - Calendário Verde</label><input type="date" class="input calendar-green"><button class="btn btn-g" style="width:100%;margin-top:8px">Salvar Lançamento</button></div></div>
+</div>
+<div id="popupCusto" class="popup"><div class="popup-box"><h3 style="font-size:14px;font-weight:800">Meu Custo de Compra</h3><p style="font-size:11px;color:#64748b;margin:6px 0">Ajuste seu custo por lote</p><input class="input" id="popupCustoInput" value="48,48" style="border:2px solid #16a34a;background:#f0fdf4;font-weight:800"><div style="display:flex;gap:8px;margin-top:12px"><button class="btn btn-g" style="flex:1" onclick="salvarLote()">AJUSTAR LOTE</button><button class="btn btn-r" style="flex:1" onclick="closePopup()">Fechar</button></div></div></div>
 <script>
-function openTab(n){document.querySelectorAll('.tab').forEach((t,i)=>t.classList.toggle('active',i+1===n));document.querySelectorAll('.card').forEach((c,i)=>c.classList.toggle('active',i+1===n));window.scrollTo(0,0)}
+function openTab(n){document.querySelectorAll('.tab-item').forEach((t,i)=>t.classList.toggle('active',i+1===n));document.querySelectorAll('.card').forEach((c,i)=>c.classList.toggle('active',i+1===n));window.scrollTo(0,0)}
 function openPopup(){document.getElementById('popupCusto').classList.add('show')}
 function closePopup(){document.getElementById('popupCusto').classList.remove('show')}
 function salvarLote(){let v=document.getElementById('popupCustoInput').value;document.getElementById('custoInput').value=v;calcularLucro();closePopup()}
-function calcularLucro(){
-let v=document.getElementById('custoInput').value.replace(',','.');let custo=parseFloat(v)||0;
-let venda=custo*1.45;let lucro=venda-custo;
-document.getElementById('custoDisplay').innerText='R$'+custo.toFixed(2).replace('.',',');
-document.getElementById('vendaDisplay').innerText='R$'+venda.toFixed(2).replace('.',',');
-document.getElementById('lucroDisplay').innerText='R$'+lucro.toFixed(2).replace('.',',');
-document.getElementById('badgeCusto').innerText='R$'+custo.toFixed(2).replace('.',',')+' ✓';
-let p=document.getElementById('popupCustoInput');if(p)p.value=document.getElementById('custoInput').value;
+function calcularLucro(){let v=document.getElementById('custoInput').value.replace(',','.');let custo=parseFloat(v)||0;let venda=custo*1.45;let lucro=venda-custo;document.getElementById('custoDisplay').innerText='R$'+custo.toFixed(2).replace('.',',');document.getElementById('vendaDisplay').innerText='R$'+venda.toFixed(2).replace('.',',');document.getElementById('lucroDisplay').innerText='R$'+lucro.toFixed(2).replace('.',',');}
+function filtrarCatalogo(){let f=document.getElementById('buscaCatalogo').value.toLowerCase();document.querySelectorAll('.catalog-item').forEach(el=>{let t=el.innerText.toLowerCase();el.style.display=t.includes(f)?'':'none';});}
+function updateImage(){
+let sel=document.getElementById('modeloSelect');
+let opt=sel.options[sel.selectedIndex];
+let val=opt.value;
+let text=opt.text;
+let larg=document.getElementById('largInput').value||2000;
+let alt=document.getElementById('altInput').value||1500;
+let fecho=document.getElementById('fechoSelect').value;
+document.getElementById('largPreview').innerText=larg;
+document.getElementById('altPreview').innerText=alt;
+document.getElementById('modelName').innerText=text.substring(0,45);
+document.getElementById('badgeFecho').innerText=fecho;
+let box=document.getElementById('imgPreviewBox');
+box.innerHTML='';
+let panes=2;
+if(val==='3f')panes=3;
+if(val==='4f')panes=4;
+if(val==='6f')panes=6;
+if(val==='1f')panes=1;
+let w=panes===1?140:panes===2?65:panes===3?45:panes===4?32:20;
+for(let i=0;i<panes;i++){let d=document.createElement('div');d.className='big-pane';d.style.width=w+'px';box.appendChild(d);}
+let dados=document.getElementById('dadosInternet');
+if(text.includes('Gold')){dados.innerText='Gold 32mm: vãos grandes, vidro até 20mm, temperado/laminado/termo acústico, Premium, robusto, NBR 10.821, ECC-129736/07 2F ECC-132414/07 4F.'; document.getElementById('badgeLinha').innerText='Gold 32mm Premium';}
+else if(text.includes('Suprema')){dados.innerText='Suprema 25mm: vãos pequenos/médios, econômica, versátil, diversas tipologias, visual robusto, consagrada mercado, NBR 10821.'; document.getElementById('badgeLinha').innerText='Suprema 25mm';}
+else if(text.includes('Mega')){dados.innerText='Mega 25: 3 bitolas comunicáveis, ampla gama tipologias, inovação exclusiva, padrão 25mm tradicional consagrado.'; document.getElementById('badgeLinha').innerText='Mega 25';}
+else{dados.innerText='Perfil real Alcoa - peso linear oficial - barra 6m - total 40,04Kg - CX002 9,74Kg Barra1, L0004 5,14Kg Barra2, L0077 10,79Kg Barra3, PFC PMJ PIG PVZ Box Fachada Gradil Standard etc.'; document.getElementById('badgeLinha').innerText='Perfil Real';}
 }
-function filtrarCatalogo(){
-let f=document.getElementById('buscaCatalogo').value.toLowerCase();
-document.querySelectorAll('.catalog-item').forEach(el=>{
-let t=el.innerText.toLowerCase();
-el.style.display=t.includes(f)?'block':'none';
-});
-}
-</script>
-</body>
-</html>
+window.onload=function(){updateImage();calcularLucro();};
+</script></body></html>
