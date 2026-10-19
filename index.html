@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sistema Serralheiro PRO V2 - Célio Vieira - 120 MODELOS + CORREÇÕES</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:Inter,Segoe UI,sans-serif;background:#f5f7fa;color:#222}
+header{background:linear-gradient(135deg,#004D40,#009688);color:#fff;padding:12px;text-align:center;position:sticky;top:0;z-index:1000}
+.tabs{display:flex;overflow-x:auto;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,.08);position:sticky;top:54px;z-index:999}
+.tab{padding:11px 10px;font-weight:800;font-size:10px;white-space:nowrap;cursor:pointer;border-bottom:3px solid transparent}
+.tab.active{border-color:#009688;color:#009688;background:#E0F2F1}
+.content{max-width:1200px;margin:auto;padding:10px}
+.card{background:#fff;border-radius:12px;padding:14px;margin-bottom:12px;box-shadow:0 2px 8px rgba(0,0,0,.06);display:none}
+.card.active{display:block}
+.badge{padding:3px 8px;border-radius:12px;font-size:10px;font-weight:800;display:inline-block;margin:2px}
+.bg{background:#E8F5E9;color:#1B5E20;border:1px solid #A5D6A7}.br{background:#FFEBEE;color:#C62828;border:1px solid #EF9A9A}.by{background:#FFF8E1;color:#F57F17;border:1px solid #FFE082}.bb{background:#E3F2FD;color:#1565C0;border:1px solid #90CAF9}.bt{background:#E0F2F1;color:#00695C;border:1px solid #80CBC4}.bp{background:#F3E5F5;color:#6A1B9A;border:1px solid #CE93D8}
+.btn{padding:8px 14px;border-radius:8px;border:none;font-weight:800;cursor:pointer;font-size:11px}.btn-g{background:#2E7D32;color:#fff}.btn-r{background:#C62828;color:#fff}.btn-b{background:#1565C0;color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:8px}
+.item{border:1px solid #e0e0e0;border-radius:8px;padding:8px;background:#fafafa;font-size:11px}
+.item b{color:#00695C}
+.input{width:100%;padding:8px;border:1px solid #ccc;border-radius:6px;margin:4px 0;font-size:12px}
+.input-green{border:2px solid #2E7D32;background:#E8F5E9}
+.kpi{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}.kpi div{flex:1;min-width:85px;background:#fff;border-radius:10px;padding:8px;text-align:center;box-shadow:0 1px 4px rgba(0,0,0,.08);font-size:11px}
+table{width:100%;border-collapse:collapse;font-size:11px}th,td{padding:6px;border:1px solid #e0e0e0;text-align:left}th{background:#E0F2F1}
+.popup{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.5);display:none;align-items:center;justify-content:center;z-index:2000}.popup.show{display:flex}.popup-box{background:#fff;border-radius:12px;padding:16px;width:90%;max-width:420px}
+.search{width:100%;padding:10px;border:2px solid #009688;border-radius:8px;margin:8px 0;font-size:13px;background:#E0F2F1}
+.calendar-green{border:2px solid #2E7D32;background:#E8F5E9;padding:8px;border-radius:8px;color:#2E7D32;font-weight:800}
+</style>
+</head>
+<body>
+<header><h2>🔧 SISTEMA SERRALHEIRO PRO V2 - Célio Vieira Santos - CORRIGIDO</h2><small>8 ABAS + 24 ORIGINAIS + 96 INTERNET = 120 MODELOS + LUCRO IA AUTO + CALENDÁRIO VERDE</small></header>
+<div class="tabs">
+<div class="tab active" onclick="openTab(1)">1. OBRAS</div>
+<div class="tab" onclick="openTab(2)">2. TIPOLOGIA</div>
+<div class="tab" onclick="openTab(3)">3. CATÁLOGO 120</div>
+<div class="tab" onclick="openTab(4)">4. CUSTO R$48,48</div>
+<div class="tab" onclick="openTab(5)">5. PRODUÇÃO</div>
+<div class="tab" onclick="openTab(6)">6. R$10.271,35</div>
+<div class="tab" onclick="openTab(7)">7. COMPRA 40,04Kg</div>
+<div class="tab" onclick="openTab(8)">8. FINANCEIRO</div>
+</div>
+<div class="content">
+<div id="c1" class="card active"><h3>1. MINHAS OBRAS - Tipologias da Obra (Vídeo 1)</h3><div class="kpi"><div><b>12</b><br>Obras</div><div><b>R$ 48.320</b><br>Total</div><div><b>3</b><br>Em Produção</div></div><table><tr><th>Obra</th><th>Cliente</th><th>Status</th></tr><tr><td>Casa Teixeira</td><td>João Silva</td><td><span class="badge bg">Em Produção</span></td></tr><tr><td>Apartamento Centro</td><td>Maria</td><td><span class="badge by">Aguardando</span></td></tr></table></div>
+<div id="c2" class="card"><h3>2. NOVA TIPOLOGIA - JC200-CB-FM Gold (Vídeo 2)</h3><p><span class="badge bb">JC200-CB-FM Gold</span> <span class="badge by">BICO PAPAGAIO</span> <span class="badge bt">Rebaixo</span> <span class="badge bg">Contramarco</span></p><label>Largura (mm)</label><input class="input" value="2000"><label>Altura (mm)</label><input class="input" value="1500"><label>Modelo</label><select class="input"><option>JC200-CB-FM Gold</option><option>PC200-CB-FM Gold</option><option>JC200 Suprema Gold</option><option>PC200 Mega25</option><option>25-001 Linha 25 POP</option><option>LG-044 Gold 30mm</option><option>SU-031 Suprema</option></select><button class="btn btn-g" onclick="openTab(4)">Calcular → Custo</button></div>
+<div id="c3" class="card"><h3>3. CATÁLOGO COMPLETO - 24 ORIGINAIS + 96 INTERNET = 120 MODELOS</h3>
+<input class="search" id="buscaCatalogo" placeholder="🔍 Busca: digite 25-001, SU-031, LG-044, CX002, JC200, PC200..." onkeyup="filtrarCatalogo()">
+<div class="kpi"><div><b>120</b><br>Perfis</div><div><b>24</b><br>Originais JC200/PC200</div><div><b>96</b><br>Internet</div><div><b>Busca Ativa</b></div></div>
+<h4 style="background:#F3E5F5;padding:6px;border-left:4px solid #6A1B9A">🟣 24 MODELOS ORIGINAIS - JC200/PC200 Suprema/Gold/Mega25 (SEUS VÍDEOS)</h4>
+<div class="grid">
+<div class="item catalog-item"><b>JC200-CB-FM Gold</b> <span class="badge bp">Original</span> <span class="badge bb">Gold 30mm</span><br>BICO PAPAGAIO - Rebaixo - Contramarco</div>
+<div class="item catalog-item"><b>PC200-CB-FM Gold</b> <span class="badge bp">Original</span><br>Correr 2 Folhas Gold</div>
+<div class="item catalog-item"><b>JC200 Suprema</b> <span class="badge bp">Original</span><br>Suprema 25mm</div>
+<div class="item catalog-item"><b>PC200 Suprema</b> <span class="badge bp">Original</span><br>Suprema 3 Planos</div>
+<div class="item catalog-item"><b>JC200 Mega25</b> <span class="badge bp">Original</span><br>Mega25 Econômica</div>
+<div class="item catalog-item"><b>PC200 Mega25</b> <span class="badge bp">Original</span><br>Mega25 2 Folhas</div>
+<div class="item catalog-item"><b>JC200-CB-FM Suprema</b> <span class="badge bp">Original</span></div>
+<div class="item catalog-item"><b>PC200-CB-FM Suprema</b> <span class="badge bp">Original</span></div>
+<div class="item catalog-item"><b>JC200 Gold Max</b> <span class="badge bp">Original</span></div>
+<div class="item catalog-item"><b>PC200 Gold Max</b> <span class="badge bp">Original</span></div>
+<div class="item catalog-item"><b>JC200 Mega25 Plus</b> <span class="badge bp">Original</span></div>
+<div class="item catalog-item"><b>PC200 Mega25 Plus</b> <span class="badge bp">Original</span></div>
+<div class="item catalog-item"><b>JC200 Suprema Gold</b> <span class="badge bp">Original</span></div>
+<div class="item catalog-item"><b>PC200 Suprema Gold</b> <span class="badge bp">Original</span></div>
+<div class="item catalog-item"><b>JC200-CB-FM Mega25</b> <span class="badge bp">Original</span></div>
+<div class="item catalog-item"><b>PC200-CB-FM Mega25</b> <span class="badge bp">Original</span></div>
+<div class="item catalog-item"><b>JC200 Gold Vidro Duplo</b> <span class="badge bp">Original</span></div>
+<div class="item catalog-item"><b>PC200 Gold Vidro Duplo</b> <span class="badge bp">Original</span></div>
+<div class="item catalog-item"><b>JC200 Suprema 4 Folhas</b> <span class="badge bp">Original</span></div>
+<div class="item catalog-item"><b>PC200 Suprema 4 Folhas</b> <span class="badge bp">Original</span></div>
+<div class="item catalog-item"><b>JC200 Mega25 4 Folhas</b> <span class="badge bp">Original</span></div>
+<div class="item catalog-item"><b>PC200 Mega25 4 Folhas</b> <span class="badge bp">Original</span></div>
+<div class="item catalog-item"><b>JC200-CB-FM Gold 3 Planos</b> <span class="badge bp">Original</span></div>
+<div class="item catalog-item"><b>PC200-CB-FM Gold 3 Planos</b> <span class="badge bp">Original</span></div>
+</div><h4 style="background:#E3F2FD;padding:6px;border-left:4px solid #1565C0">🔵 LINHA 25 POP (0,354 a 0,737 Kg/m) - Internet</h4>
+<div class="grid">
+<div class="item catalog-item"><b>25-001</b> Marco Lateral <span class="badge bb">0,354 Kg/m</span> <span class="badge bg">R$48,48</span></div>
+<div class="item catalog-item"><b>25-002</b> Montante Porta <span class="badge bb">0,354 Kg/m</span></div>
+<div class="item catalog-item"><b>25-026</b> Travessa Porta <span class="badge bb">0,509 Kg/m</span></div>
+<div class="item catalog-item"><b>25-504</b> Montante <span class="badge bb">0,548 Kg/m</span></div>
+<div class="item catalog-item"><b>25-508</b> Travessa <span class="badge bb">0,737 Kg/m</span></div>
+<div class="item catalog-item"><b>25-542</b> Travessa <span class="badge bb">0,713 Kg/m</span></div>
+<div class="item catalog-item"><b>25-548</b> Travessa <span class="badge bb">0,279 Kg/m</span></div>
+</div>
+<h4 style="background:#FFF8E1;padding:6px;border-left:4px solid #F9A825">🔷 LINHA 30 (0,573 a 1,184 Kg/m)</h4>
+<div class="grid">
+<div class="item catalog-item"><b>30-023</b> <span class="badge by">0,573 Kg/m</span></div>
+<div class="item catalog-item"><b>30-025</b> <span class="badge by">0,823 Kg/m</span></div>
+<div class="item catalog-item"><b>30-026</b> <span class="badge by">0,826 Kg/m</span></div>
+<div class="item catalog-item"><b>30-077</b> <span class="badge by">0,830 Kg/m</span></div>
+<div class="item catalog-item"><b>30-082</b> <span class="badge by">1,184 Kg/m</span></div>
+</div>
+<h4 style="background:#FFF8E1;padding:6px;border-left:4px solid #FF6F00">🟡 LINHA 32 GOLD (0,650 a 2,098 Kg/m)</h4>
+<div class="grid">
+<div class="item catalog-item"><b>LG-002</b> <span class="badge by">0,650 Kg/m</span></div>
+<div class="item catalog-item"><b>LG-003</b> <span class="badge by">0,755 Kg/m</span></div>
+<div class="item catalog-item"><b>LG-044</b> <span class="badge by">1,247 Kg/m</span></div>
+<div class="item catalog-item"><b>LG-047</b> <span class="badge by">1,140 Kg/m</span></div>
+<div class="item catalog-item"><b>LG-062</b> <span class="badge by">1,728 Kg/m</span></div>
+<div class="item catalog-item"><b>LG-070</b> <span class="badge by">1,998 Kg/m</span></div>
+<div class="item catalog-item"><b>LG-071</b> <span class="badge by">2,098 Kg/m</span></div>
+</div>
+<h4 style="background:#E0F2F1;padding:6px;border-left:4px solid #009688">🟢 SUPREMA 25 (Alcoa Oficial)</h4>
+<div class="grid">
+<div class="item catalog-item"><b>SU-031</b> <span class="badge bt">1,279 Kg/m</span></div>
+<div class="item catalog-item"><b>SU-032</b> <span class="badge bt">1,195 Kg/m</span></div>
+<div class="item catalog-item"><b>SU-033</b> <span class="badge bt">0,743 Kg/m</span></div>
+<div class="item catalog-item"><b>SU-053</b> <span class="badge bt">0,507 Kg/m</span> Central 4 Folhas</div>
+<div class="item catalog-item"><b>CA-629</b> <span class="badge bt">0,307 Kg/m</span></div>
+<div class="item catalog-item"><b>CA-658</b> <span class="badge bt">0,634 Kg/m</span></div>
+</div>
+<h4 style="background:#FFEBEE;padding:6px;border-left:4px solid #C62828">🔴 PORTÃO / BOX / FACHADA / GRADIL / STANDARD</h4>
+<div class="grid">
+<div class="item catalog-item"><b>CX002</b> <span class="badge br">9,74Kg Barra1</span></div>
+<div class="item catalog-item"><b>L0004</b> <span class="badge br">5,14Kg Barra2</span></div>
+<div class="item catalog-item"><b>L0077 LM08</b> <span class="badge br">10,79Kg Barra3</span> Total 40,04Kg</div>
+<div class="item catalog-item"><b>BOX</b> Box 2F/3F Banheiro</div>
+<div class="item catalog-item"><b>PFC PPV</b> Fachada Pele Vidro</div>
+<div class="item catalog-item"><b>PLG</b> Gradil</div>
+<div class="item catalog-item"><b>Standard</b> Barra Chata, Cantoneira, T, U, Tubo</div>
+</div>
+</div>
+<div id="c4" class="card"><h3>4. CUSTO EDITÁVEL - Meu Custo de Compra + LUCRO IA AUTO ✅</h3>
+<label>Meu Custo por Barra (R$)</label><input class="input input-green" id="custoInput" value="48,48" oninput="calcularLucro()">
+<div class="kpi">
+<div style="background:#E8F5E9;border:2px solid #2E7D32"><b style="color:#2E7D32" id="custoDisplay">R$48,48</b><br>✓ Verde<br><button class="btn btn-g" onclick="openPopup()">AJUSTAR LOTE</button></div>
+<div style="background:#FFEBEE;border:2px solid #C62828"><b style="color:#C62828">R$0,00</b><br>✎ Vermelho<br><button class="btn btn-r" onclick="document.getElementById('custoInput').value='0,00';calcularLucro()">Editar</button></div>
+<div style="background:#E3F2FD;border:2px solid #1565C0"><b style="color:#1565C0" id="vendaDisplay">R$70,29</b><br>Venda 45% IA AUTO</div>
+<div style="background:#FFF8E1;border:2px solid #F9A825"><b style="color:#F57F17" id="lucroDisplay">R$21,81</b><br>Lucro IA AUTO</div>
+</div>
+<table><tr><th>Perfil</th><th>Qtd</th><th>Custo</th><th>Ação</th></tr><tr><td>CX002</td><td>2 barras</td><td><span class="badge bg" id="badgeCusto">R$48,48 ✓</span></td><td><button class="btn btn-g" onclick="openPopup()">✓</button> <button class="btn btn-r">✎</button></td></tr><tr><td>L0004</td><td>1 barra</td><td><span class="badge br">R$0,00 ✎</span></td><td><button class="btn btn-g">✓</button> <button class="btn btn-r">✎</button></td></tr></table>
+<button class="btn btn-b" onclick="openTab(5)">Próximo Produção</button>
+</div>
+<div id="c5" class="card"><h3>5. PRODUÇÃO/INSTALAÇÃO (Vídeo 4)</h3>
+<label>R$/Kg Bruto</label><input class="input" value="18,50"><label>R$/Kg Líquido</label><input class="input" value="22,00"><label>R$/Peça</label><input class="input" value="35,00"><label>Adicionais R$</label><input class="input" value="10,00"><label>Impostos %</label><input class="input" value="8%"><div class="kpi"><div><b>R$185,00</b><br>Bruto</div><div><b>R$125,40</b><br>Líquido</div><div><b>R$35</b><br>Peça</div></div><button class="btn btn-b" onclick="openTab(6)">Gerar Orçamento R$10.271,35</button></div>
+<div id="c6" class="card"><h3>6. RESUMO ORÇAMENTO - Valor Total R$10.271,35 (Vídeo 5)</h3>
+<div class="kpi"><div style="background:#004D40;color:#fff"><b style="font-size:16px">R$10.271,35</b><br>VALOR TOTAL</div><div><b>R$4.820,00</b><br>Material</div><div><b>R$2.100,00</b><br>Mão Obra</div><div><b>R$3.351,35</b><br>Lucro 45% IA</div></div><table><tr><th>Item</th><th>Qtd</th><th>Total</th></tr><tr><td>JC200-CB-FM Gold 2000x1500</td><td>3 un</td><td>R$5.800,00</td></tr><tr><td>Instalação</td><td>1</td><td>R$450,00</td></tr><tr><td>Vidro Temperado 8mm</td><td>4,5m²</td><td>R$1.200,00</td></tr></table><button class="btn btn-b" onclick="openTab(7)">Ver Lista Compra 40,04Kg</button></div>
+<div id="c7" class="card"><h3>7. LISTA COMPRA - CX002 9,74Kg Barra1 L0004 5,14Kg Barra2 L0077 10,79Kg Barra3 Total 40,04Kg (Vídeo 5 Final)</h3><table><tr><th>Código</th><th>Perfil</th><th>Peso/Barra</th><th>Barras</th><th>Total Kg</th></tr><tr><td>CX002</td><td>Caixa Portão</td><td>9,74Kg</td><td>Barra 1</td><td>9,74Kg</td></tr><tr><td>L0004</td><td>L Tubular</td><td>5,14Kg</td><td>Barra 2</td><td>5,14Kg</td></tr><tr><td>L0077 LM08</td><td>Lambril Portão</td><td>10,79Kg</td><td>Barra 3</td><td>10,79Kg</td></tr><tr><td>25-001</td><td>Marco Lateral 0,354Kg/m</td><td>2,12Kg</td><td>1 barra 6m</td><td>2,12Kg</td></tr><tr><td>SU-031</td><td>Marco Sup 1,279Kg/m</td><td>7,67Kg</td><td>1 barra</td><td>7,67Kg</td></tr><tr style="background:#E0F2F1;font-weight:800"><td colspan="4">TOTAL</td><td>40,04 Kg</td></tr></table><button class="btn btn-b" onclick="openTab(8)">Financeiro Colorido</button></div>
+<div id="c8" class="card"><h3>8. FINANCEIRO - CONTAS A RECEBER Amarelo/Verde/Vermelho + 3 pontinhos + Calendário Verde ✅</h3>
+<div class="kpi"><div style="background:#FFF9C4"><b>Aguardando</b><br>R$3.200,00</div><div style="background:#E8F5E9"><b>Recebido</b><br>R$8.500,00</div><div style="background:#FFEBEE"><b>Vencido</b><br>R$850,00</div></div>
+<table><tr><th>Cliente</th><th>Valor</th><th>Vencimento</th><th>Status</th><th>⋮</th></tr><tr><td>João Silva</td><td>R$2.500</td><td>10/10/2026</td><td><span class="badge by">Aguardando</span></td><td>⋮</td></tr><tr><td>Maria Souza</td><td>R$5.000</td><td>05/10/2026</td><td><span class="badge bg">Recebido</span></td><td>⋮</td></tr><tr><td>Carlos Teixeira</td><td>R$850</td><td>01/09/2026</td><td><span class="badge br">Vencido</span></td><td>⋮</td></tr></table>
+<div style="margin-top:12px;padding:12px;background:#E8F5E9;border:2px solid #2E7D32;border-radius:10px">
+<h4>➕ Novo Lançamento - Calendário Verde (Vídeo 6)</h4>
+<label>Cliente</label><input class="input" placeholder="Nome cliente">
+<label>Valor R$</label><input class="input" placeholder="2500">
+<label>Data Vencimento - Calendário Verde</label>
+<input type="date" class="input calendar-green" id="calendarioVerde">
+<label>Status</label><select class="input"><option>Aguardando (Amarelo)</option><option>Recebido (Verde)</option><option>Vencido (Vermelho)</option></select>
+<button class="btn btn-g" style="width:100%;margin-top:8px">Salvar Lançamento</button>
+</div>
+</div>
+</div>
+<div id="popupCusto" class="popup"><div class="popup-box"><h3>Meu Custo de Compra (Vídeo 3)</h3><label>Custo por Barra</label><input class="input input-green" id="popupCustoInput" value="48,48" oninput="calcularLucro()"><label>Fornecedor</label><input class="input" value="Ceará Alumínio"><div style="display:flex;gap:8px;margin-top:10px"><button class="btn btn-g" style="flex:1" onclick="salvarLote()">✓ AJUSTAR LOTE</button><button class="btn btn-r" style="flex:1" onclick="closePopup()">Fechar</button></div></div></div>
+<script>
+function openTab(n){document.querySelectorAll('.tab').forEach((t,i)=>t.classList.toggle('active',i+1===n));document.querySelectorAll('.card').forEach((c,i)=>c.classList.toggle('active',i+1===n));window.scrollTo(0,0)}
+function openPopup(){document.getElementById('popupCusto').classList.add('show')}
+function closePopup(){document.getElementById('popupCusto').classList.remove('show')}
+function salvarLote(){let v=document.getElementById('popupCustoInput').value;document.getElementById('custoInput').value=v;calcularLucro();closePopup()}
+function calcularLucro(){
+let v=document.getElementById('custoInput').value.replace(',','.');let custo=parseFloat(v)||0;
+let venda=custo*1.45;let lucro=venda-custo;
+document.getElementById('custoDisplay').innerText='R$'+custo.toFixed(2).replace('.',',');
+document.getElementById('vendaDisplay').innerText='R$'+venda.toFixed(2).replace('.',',');
+document.getElementById('lucroDisplay').innerText='R$'+lucro.toFixed(2).replace('.',',');
+document.getElementById('badgeCusto').innerText='R$'+custo.toFixed(2).replace('.',',')+' ✓';
+let p=document.getElementById('popupCustoInput');if(p)p.value=document.getElementById('custoInput').value;
+}
+function filtrarCatalogo(){
+let f=document.getElementById('buscaCatalogo').value.toLowerCase();
+document.querySelectorAll('.catalog-item').forEach(el=>{
+let t=el.innerText.toLowerCase();
+el.style.display=t.includes(f)?'block':'none';
+});
+}
+</script>
+</body>
+</html>
